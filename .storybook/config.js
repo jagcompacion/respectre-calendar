@@ -2,7 +2,7 @@ import { configure } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
 
 setOptions({
-  name: 'Respectre',
+  name: 'Recalendar',
   url: 'https://github.com/jagcompacion/respectre',
   goFullScreen: false,
   showLeftPanel: true,

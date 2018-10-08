@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import 'spectre.css/dist/spectre.css';
+import 'spectre.css/dist/spectre-exp.css';
 import 'spectre.css/dist/spectre-icons.css';
-import { storiesOf } from '@storybook/react';
-import { withReadme } from 'storybook-readme';
 import {
   Calendar,
   CalendarNav,
@@ -11,16 +10,12 @@ import {
   CalendarDate,
   DateItem,
   CalendarBody,
-} from '../ui/experimentals';
-import { Container } from '../ui/layout';
-import { Button, Icon } from '../ui/elements';
+} from 'respectre/experimentals';
+import { Button, Icon } from 'respectre/elements';
 
-import ChipReadme from '../docs/Chip.md';
-
-storiesOf('Experimentals/ Calendar', module)
-  .addDecorator(withReadme(ChipReadme))
-  .add('default', () => (
-    <Container className="p-2">
+class App extends Component {
+  render() {
+    return (
       <Calendar>
         <CalendarNav>
           <Button color="link" action size="lg">
@@ -166,5 +161,8 @@ storiesOf('Experimentals/ Calendar', module)
           </CalendarBody>
         </CalendarContainer>
       </Calendar>
-    </Container>
-  ));
+    )
+  }
+}
+
+export default App;

@@ -1,7 +1,7 @@
 {
-  "name": "respectre",
+  "name": "respectre-calendar",
   "version": "0.0.5",
-  "description": "React components using spectre.css",
+  "description": "Calendar using respectre ui",
   "main": "",
   "scripts": {
     "build": "node_modules/.bin/webpack",
@@ -17,9 +17,11 @@
   "repository": "https://github.com/jagcompacion/respectre",
   "dependencies": {
     "classnames": "^2.2.6",
+    "date-fns": "^1.29.0",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "respectre": "0.0.5",
     "spectre.css": "^0.5.3"
   },
   "devDependencies": {

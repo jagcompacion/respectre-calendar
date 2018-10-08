@@ -1,11 +1,11 @@
-# Button
+# Calendar
 
 <!-- STORY -->
 
 ### Usage
 
 ```js
-import { Button } from 'respectre/elements';
+import Recalendar from 'recalendar';
 ```
 
 ### Properties
@@ -26,51 +26,11 @@ import { Button } from 'respectre/elements';
 #### Default
 
 ```js
-import { Button } from 'respectre/elements';
+import Recalendar from 'recalendar';
 
 render() {
   return (
-    <Button onClick={this.handleClick}>Send mail</Button>
-  );
-}
-```
-
-#### Colors
-
-```js
-import { Button } from 'respectre/elements';
-
-render() {
-  return (
-    <Button color="primary">
-      Send mail
-    </Button>
-  );
-}
-```
-
-#### Size
-
-```js
-import { Button } from 'respectre/elements';
-
-render() {
-  return (
-    <Button size="lg">
-      Send mail
-    </Button>
-  );
-}
-```
-
-#### Clear
-
-```js
-import { Button } from 'respectre/elements';
-
-render() {
-  return (
-    <Button color="clear" />
+    <Calendar onClick={this.handleClick}>Send mail</Calendar>
   );
 }
 ```

@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 module.exports = {
   entry: {
     elements: './src/ui/elements',
